@@ -4,6 +4,7 @@ import lombok.Getter;
 import org.example.labo01.domain.entities.Pokémon;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -11,40 +12,40 @@ import java.util.List;
 public class ListaPokémon {
     private final List<Pokémon> pokemons;
 
-
-    public ListaPokémon(List<Pokémon> pokemons) {
-        this.pokemons = pokemons;
+    public ListaPokémon() {
+        this.pokemons = new ArrayList<>();
 
         this.pokemons.add(Pokémon.builder()
-                .nombre("Pikachu")
-                .tipo("Electrico")
-                .debilidad("Tierra")
-                .zonaDeEncuentro("Bosque y hierva alta")
-                .región("Desde la primera generacion")
+                .Nombre("Pikachu")
+                .Tipo("Electrico")
+                .Debilidad("Tierra")
+                .ZonaDeEncuentro("Bosque y hierva alta")
+                .Región("Desde la primera generacion")
                 .build());
 
         this.pokemons.add(Pokémon.builder()
-                .nombre("Charizard")
-                .tipo("Fuego y volador")
-                .debilidad("Agua, electrico y roca")
-                .zonaDeEncuentro("Entregado por el profesor")
-                .región("Desde la primera generacion")
+                .Nombre("Charizard")
+                .Tipo("Fuego y volador")
+                .Debilidad("Agua, electrico y roca")
+                .ZonaDeEncuentro("Entregado por el profesor")
+                .Región("Desde la primera generacion")
                 .build());
 
         this.pokemons.add(Pokémon.builder()
-                .nombre("Weezing")
-                .tipo("Veneno")
-                .debilidad("Psiquico y tierra")
-                .zonaDeEncuentro("Hierva alta")
-                .región("Desde la primera generacion")
+                .Nombre("Weezing")
+                .Tipo("Veneno")
+                .Debilidad("Psiquico y tierra")
+                .ZonaDeEncuentro("Hierva alta")
+                .Región("Desde la primera generacion")
                 .build());
 
         this.pokemons.add(Pokémon.builder()
-                .nombre("Lotad")
-                .tipo("Agua y planta")
-                .debilidad("Bicho, veneno y volador")
-                .zonaDeEncuentro("Hierva alta y agua")
-                .región("Desde la segunda generacion")
+                .Nombre("Lotad")
+                .Tipo("Agua y planta")
+                .Debilidad("Bicho, veneno y volador")
+                .ZonaDeEncuentro("Hierva alta y agua")
+                .Región("Desde la segunda generacion")
                 .build());
     }
+
 }

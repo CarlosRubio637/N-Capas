@@ -11,9 +11,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 
 public class Pokémon {
-    String nombre;
-    String tipo;
-    String debilidad;
-    String zonaDeEncuentro;
-    String región;
+    String Nombre;
+    String Tipo;
+    String Debilidad;
+    String ZonaDeEncuentro;
+    String Región;
 }
